@@ -34,6 +34,7 @@ LintegrateR selects viable exons by the following requirements:
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_LintegrateR.png)
 
 Input: Gene sequence in Genbank format (.gb), exon positions if not available in .gb file (edit accordingly in python script)
+
 Sample output:
 
 ```
