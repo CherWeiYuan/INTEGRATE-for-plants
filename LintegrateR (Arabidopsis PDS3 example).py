@@ -28,7 +28,7 @@ intron = 'TGTTGATGCAACCATAAAGTGATATTTAATAATTATTTATAATCAGCAACTTAACCACAAAACAACCATA
 # Uploading gene sequence
 # For Genbank file: gb = SeqIO.read("Nicotiana benthamiana PDS (Niben101Scf01283g02002.1).gb", "gb")
 # For Fasta file: gb = SeqIO.read("Nicotiana benthamiana PDS (Niben101Scf01283g02002.1).fasta", "fasta")
-gb = SeqIO.read("Genomic PDS3 Arabidopsis thaliana chr4 8187190 to 8198320.gb", "gb")
+gb = SeqIO.read("test_Arabidopsis_PDS3.gb", "gb")
 
 # Manually adding exon locations
 # manual_annotation = True if genbank files does not have exons labelled)
