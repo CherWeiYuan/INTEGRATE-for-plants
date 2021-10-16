@@ -1,6 +1,5 @@
 from Bio import SeqIO
 from Bio.Seq import Seq
-from Bio.Alphabet import IUPAC
 from Bio.SeqFeature import SeqFeature
 from Bio.SeqFeature import FeatureLocation
 from sys import exit
@@ -171,11 +170,11 @@ cargo_start = None
 intron_end = None
 
 # Reading sequence of L-Cargo-R
-cargo1 = Seq(cargo_frame1,IUPAC.unambiguous_dna)
-cargo2 = Seq(cargo_frame2,IUPAC.unambiguous_dna)
-cargo3 = Seq(cargo_frame3,IUPAC.unambiguous_dna)
+cargo1 = Seq(cargo_frame1)
+cargo2 = Seq(cargo_frame2)
+cargo3 = Seq(cargo_frame3)
 cargo_lst = [(cargo1,1), (cargo2,2), (cargo3,3)]
-intron = Seq(intron, IUPAC.unambiguous_dna)
+intron = Seq(intron)
 data = {}
 
 # Loop for exons, and nested loop for cargoes
