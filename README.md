@@ -33,6 +33,12 @@ LintegrateR selects viable exons by the following requirements:
 
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_LintegrateR.png)
 
+# Dependencies
+Python 3.8
+Biopython 1.79
+
+You can first toy with LintegrateR by using the script "LintegrateR.py" with "test_Arabidopsis_PDS3.gb" as sample input.
+
 Input: Gene sequence in Genbank format (.gb), exon positions if not available in .gb file (edit accordingly in python script)
 
 Sample output:
