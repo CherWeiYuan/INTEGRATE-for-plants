@@ -8,13 +8,16 @@ The crRNA guides the CRISPR-Cas complex to the target site where transposases in
 The inserted transposon has the following architecture: L_seq - Cargo_seq - R_seq. 
 
 If the transposon is inserted at the 3' end of an exon, L_seq consists of multiple stop codons that prevents the expression of the GFP tag.
+
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_Intron_engineering_A.png)
 
 Our solution is intron-engineering: remove L_seq by making it an intron.
 A conserved intron has the following architecture (gt-a-ag):
+
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_Intron_engineering_B.png)
 
 Our Cargo_seq has the following architecture: L_seq-a-UBI_intron-ag-GFP-R_seq. When our Cargo_seq is inserted behind an the 3' GT of an exon, the L_seq should be excised as an intron:
+
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_Intron_engineering_C.png)
 
 We validate the intron excision of L_seq in-silico using NetGene2 prediction. 
@@ -27,6 +30,7 @@ LintegrateR selects viable exons by the following requirements:
 3. If the tag (e.g. GFP), after insertion, can be translated properly in-frame
 
 ## Quick start
+
 ![alt text](https://raw.githubusercontent.com/CherWeiYuan/LintegrateR/master/Figure/Figure_LintegrateR.png)
 
 Input: Gene sequence in Genbank format (.gb), exon positions if not available in .gb file (edit accordingly in python script)
